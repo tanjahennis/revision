@@ -15,3 +15,5 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+echo '/.idea/*' >> ~/.gitignore_global
