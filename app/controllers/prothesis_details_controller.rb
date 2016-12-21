@@ -1,0 +1,2 @@
+class ProthesisDetailsController < ApplicationController
+end
