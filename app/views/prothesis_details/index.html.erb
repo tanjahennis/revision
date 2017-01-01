@@ -1,1 +1,112 @@
-<%= react_component('Details') %>
+<% @prothesis_details.each do |detail| %>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Details</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>prothesis</td>
+          <td><%= detail.prothesis %></td>
+        </tr>
+        <tr>
+          <td>prothesis by</td>
+          <td><%= detail.prothesis_by %></td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td><%= detail.prothesis_date %></td>
+        </tr>
+        <tr>
+          <td>indication</td>
+          <td><%= detail.indication %></td>
+        </tr>
+        <tr>
+          <td>cup approach</td>
+          <td><%= detail.cup_approach %></td>
+        </tr>
+        <tr>
+          <td>cup brand</td>
+          <td><%= detail.cup_brand %></td>
+        </tr>
+        <tr>
+          <td>cup cemented</td>
+          <td><%= detail.cup_cemented %></td>
+        </tr>
+        <tr>
+          <td>cup is cemented</td>
+          <td><%= detail.cup_is_cemented %></td>
+        </tr>
+        <tr>
+          <td>cup not cemented </td>
+          <td><%= detail.cup_not_cemented %></td>
+        </tr>
+        <tr>
+          <td>cup size</td>
+          <td><%= detail.cup_size %></td>
+        </tr>
+        <tr>
+          <td>cup liner</td>
+          <td><%= detail.cup_liner %></td>
+        </tr>
+        <tr>
+          <td>bone quality</td>
+          <td><%= detail.bone_quality %></td>
+        </tr>
+        <tr>
+          <td>bone paprosky grade</td>
+          <td><%= detail.bone_paprosky_grade %></td>
+        </tr>
+        <tr>
+          <td>bone pelvic discontinuity</td>
+          <td><%= detail.bone_pelvic_discontinuity %></td>
+        </tr>
+        <tr>
+          <td>stem cemented</td>
+          <td><%= detail.stem_cemented %></td>
+        </tr>
+        <tr>
+          <td>stem is cemented</td>
+          <td><%= detail.stem_is_cemented %></td>
+        </tr>
+        <tr>
+          <td>stem not cemented</td>
+          <td><%= detail.stem_not_cemented %></td>
+        </tr>
+        <tr>
+          <td>stem fixation</td>
+          <td><%= detail.stem_fixation %></td>
+        </tr>
+        <tr>
+          <td>stem brand</td>
+          <td><%= detail.stem_brand %></td>
+        </tr>
+        <tr>
+          <td>stem size</td>
+          <td><%= detail.stem_size %></td>
+        </tr>
+        <tr>
+          <td>stem length</td>
+          <td><%= detail.stem_length %></td>
+        </tr>
+        <tr>
+          <td>taper</td>
+          <td><%= detail.taper %></td>
+        </tr>
+        <tr>
+          <td>head</td>
+          <td><%= detail.head %></td>
+        </tr>
+        <tr>
+          <td>head size</td>
+          <td><%= detail.head_size %></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+<% end %>

@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :prothesis_detail do
       prothesis                 { Faker::Lorem.word }
-      prothesis_by              { Faker::Lorem.name }
+      prothesis_by              { Faker::Name.name }
       prothesis_date            { Faker::Date.backward(1.year.ago) }
       indication                { Faker::Lorem.word }
       cup_approach              { Faker::Lorem.word }

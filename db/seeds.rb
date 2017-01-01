@@ -3,7 +3,7 @@ prothesis_details = []
 10.times do
   prothesis_details << ProthesisDetail.create(
     prothesis: Faker::Lorem.word,
-    prothesis_by: Faker::Lorem.name,
+    prothesis_by: Faker::Name.name,
     prothesis_date: Faker::Date.backward(14),
     indication: Faker::Lorem.word,
     cup_approach: Faker::Lorem.word,
