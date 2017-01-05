@@ -4,9 +4,9 @@ class Patient extends React.Component {
       <div>
         {this.props.patients.map(function(patient){
           return(
-            <div>
+            <div key={patient.id}>
               <h2>Patient {patient.id}</h2>
-              <ul key={patient.id}>
+              <ul>
                 <li className="listItem">recent_surgeries {patient.recent_surgeries}</li>
                 <li className="listItem">comorbidities {patient.comorbidities}</li>
                 <li className="listItem">medication {patient.medication}</li>
