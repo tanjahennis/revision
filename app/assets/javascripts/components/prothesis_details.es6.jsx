@@ -1,9 +1,11 @@
 class ProthesisDetails extends React.Component {
   render () {
     return <div>
+      <h2>Operation Dates</h2>
       {this.props.prothesis_details.map(function(detail){
         return(
-          <p key={detail.id}>Date: {detail.prothesis_date} </p>
+          <li key={detail.id}
+            className="listItem">Date: {detail.prothesis_date} </li>
         )
       })}
     </div>
