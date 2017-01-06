@@ -2,6 +2,7 @@ class ProthesisDetailsController < ApplicationController
 
   def index
     @prothesis_details = ProthesisDetail.all
+    render component: 'ProthesisDetails', props: { prothesis_details: @prothesis_details }
   end
 
   def new
